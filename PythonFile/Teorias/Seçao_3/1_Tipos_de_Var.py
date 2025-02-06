@@ -13,8 +13,8 @@ TIPO NUMERICO1:
     [5] += -> utilizado para incrementar igual o num = num + 1
     [6] type -> funcao que indica qual o tipo de variavel (int, float, double, etc...)
 
-OBS:
 
+OBS:
     [1] Na programaçao a virgula nao separa casas decimais, e o ponto,a virgula
 separa variaveis
     [2] Na programaçao usamos o '=' para atribuir valor a variavel e
@@ -26,6 +26,7 @@ TIPO FLOAT:
 
     [1] Ao convertemos valores float para inteiro perdemos precisao (perdemos o decimal dele)
 
+
 TIPO BOOLEANO:
     São valores verdadeiro ou falso
     Necessita escrever com a letra maiuscula (True ou False)
@@ -33,6 +34,7 @@ TIPO BOOLEANO:
     [1] negação (not) -> nega o valor, se temos True ele transforma em False
     [2] Ou (or) -> depende de dois valores, um ou outro deve ser verdadeiro
     [3] E (and) -> depende de dois valores, ambos devem ser verdadeiros
+
 
 TIPO STRING:
     [1] As strings sao basicamente um mapeamento da palavra
@@ -50,6 +52,13 @@ TIPO STRING:
         - Podemos alterar a separação usando split('tipo de separação)
     [7] replace() -> troca um valor da string por outro
         Atentar-se que há a dif entre maiusculo e minusculo
+
+TIPO NONE:
+    - Em Python o tipo de dado 'none' representar o sem tipo.
+    - O tipo None é sempre considerado Falso.
+    - O tipo None é sempre especificado com a primeira letra maiúscula.
+    - Quando utilizar?
+        Podemos utilizar o tipo None quando queremos criar uma variável e inicializá-la sem tipo, antes de receber um valor/tipo para ela.
 """
 
 # Tipo numerico [5]

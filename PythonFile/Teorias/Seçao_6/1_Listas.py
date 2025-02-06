@@ -1,13 +1,14 @@
 """
 
-LISTAS:
-    As listas funcionam como matrizes/vetores/arrays em outras linguagens, com a diferença de serem dinâmicas e poderemos inserir qualquer tipo de dados.
+LISTAS (list):
+    - As listas funcionam como matrizes/vetores/arrays em outras linguagens, com a diferença de serem dinâmicas e poderemos inserir qualquer tipo de dados.
+    - Representadas por '[]' colchetes
 
     # Linguagens C/Java: Arrays
         - Possuem tamanho e tipo de dado fixo
             Se criarmos um array do tipo int e com tamanho 5, esse array SEMPRE será do tipo inteiro e terá no MAXIMO 5 valores.
 
-    # Em Python: Listas
+    1. Em Python: Listas
         - Possuem tamanho e tipo de dado dinâmico
             Podemos simplesmente criar a lista e ir adicionando elementos, podemos adicionar QUALQUER tipo de dado
         - As listas em Python são representadas por colchetes [].
@@ -20,7 +21,7 @@ LISTAS:
             [6] Podemos misturar tipos de dados em uma lista.
 
 
-    Algumas funções que poderemos utilizar nas listas:
+    2. Algumas funções que poderemos utilizar nas listas:
         [1] Ordenar a lista:
             sort() -> lista.sort(), depois printa
         [2] Contar a ocorrência de um valor:
@@ -57,13 +58,52 @@ LISTAS:
             - Na Seção 3 fizemos o cast de string para lista, podemos fazer o inverso agora
                 join() -> var = 'delimitador'.join(), depois printa
 
-    Utilizando listas com outros interativos:
+    3. Utilizando listas com outros interativos:
         [1] While
         [2] For
-        [3] Variaveis em listas
+        [3] Variáveis em listas
         [4] Gerar indices num For
+        [5] Descobrir o índice de um valor da lista
+            - index() -> lista.index(valor) ou lista.index(valor, range_inicial, range_final)
+            - Retorna o índice do primeiro item encontrado (caso tenha repetição do item na lista)
+
+    4. Revisão de slicing:
+        [1] inicio
+            lista[x::]
+        [2] fim
+            lista[:x:]
+        [3] passo
+            lista[::x]
+            - Se tivermos numeros ordenados pode ser bom para avaliarmos apenas os pares ou ímpares.
+
+    5. Trocando valores de uma lista:
+        [1] trocando valores - Metodo 1
+        [2] trocando valores - Metodo 2
+
+    6. Realizando operações em uma lista:
+        Exceto o Tamanho da lista [4] todos esses tem que ser com valores inteiros ou reais.
+        [1] Soma
+        [2] Valor máximo
+        [3] Valor mínimo
+        [4] Tamanho da lista
+
+    7. Desempacotamento de lista:
+        - Podemos atribuir variáveis a valores de uma lista.
+        - Eu tenho que desempacotar a mesma quantidade de valores e variáveis.
+            Não é possível desempacotar 3 variáveis em uma lista de 4 itens.
+
+    8. Copiando listas:
+        [1] Utilizando a função Copy() -> Chamado de Deep Copy
+            Nesse método fazemos a cópia de uma lista para outra, ambas são independentes, uma alteração na lista copiada não altera a lista base.
+            Copy() -> lista.copy()
+        [2] Utilizando atribuição de variável -> Chamado de Shallow Copy
+            Nesse método fazemos a cópia de uma lista atribuindo uma outra, as listas são dependentes uma da outra, uma alteração em uma afeta a outra.
 """
 
+
+#1 TIPOS DE LISTAS
+
+"""
 # Tipo de lista [1]
 lista1 = [1, 5, 5, 23, 219, 2391, 932]
 # Tipo de lista [2]
@@ -77,12 +117,16 @@ lista5 = list('Guilherme Jenipapo')
 # Tipo de lista [6]
 lista6 = [1, 32.4, True, 'Nelson', [3, 2 ,4]]
 
-"""num = '23'
+num = '23'
 if num in lista1:
     print(f'Encontrei o {num}')
 else:
-    print(f'Não encontrei o {num}')"""
+    print(f'Não encontrei o {num}')
+"""
 
+#2 FUNÇÕES
+
+"""
 # Função ordenar [1]
 lista1.sort()
 print(lista1)
@@ -135,8 +179,11 @@ print(joina.split())
 join_splitado = ['Teste', 'do', 'join']
 join_joinado = ' '.join(join_splitado)
 print(join_joinado)
+"""
 
+#3 ITERATIVOS
 
+"""
 # Iterativo [1]
 carrinho = []
 produto = ''
@@ -164,4 +211,90 @@ cores = ['verde', 'amarelo', 'azul', 'branco']
 for indice, cor in enumerate(cores):
     print(indice, cor)
 
-# Parei em 01:40:00 do video 31. Listas
+# Iterativo [5]
+print(cores.index('amarelo'))
+"""
+
+#4 REVISÃO DE SLICING
+
+"""
+listaslc = [1, 2, 3, 4, 5, 6]
+
+# Slicing [1]
+print(listaslc[2::]) # começa do indice 2 até o final, passo = 1 (padrão)
+
+# Slicing [2]
+print(listaslc[:4:]) # Começa do indice 0 até o indice 4, passo = 1 (padrão)
+
+# Slicing [3]
+print(listaslc[::2]) # Pega printa a lista toda sendo que a cada 2 indices
+"""
+
+#5 TROCANDO VALORES
+
+"""
+troca = ['Valor1', 'Valor2']
+troca2 = ['Valor3', 'Valor4']
+
+# Trocando valores [1]
+print(troca)
+troca[0], troca[1] = troca[1], troca[0]
+print(troca)
+
+#  Trocando valores [2]
+print(troca2)
+troca2.reverse()
+print(troca2)
+"""
+
+#6 REALIZANDO OPERAÇÕES
+
+"""
+Lista_Operacoes = [1, 2, 3, 4, 5, 7.6]
+
+# Operações [1] - Soma
+print(sum(Lista_Operacoes))
+# Operações [2] - Valor máximo
+print(max(Lista_Operacoes))
+# Operações [3] - Valor mínimo
+print(min(Lista_Operacoes))
+# Operações [4] - Tamanho da lista
+print(len(Lista_Operacoes))
+"""
+
+#7 DESEMPACOTAMENTO DE LISTAS
+
+"""
+lista_empacotada = [1, 2, 3, 4]
+
+desem1, desem2, desem3, desem4 = lista_empacotada
+
+print(desem1)
+print(desem2)
+print(desem3)
+print(desem4)
+"""
+
+#8 COPIANDO LISTAS
+
+"""
+lista_base = [1, 2, 3, 4]
+
+# Função copy [1] - Deep copy
+deep = lista_base.copy()
+print(lista_base)
+print(deep)
+deep.append(5)
+print(lista_base)
+print(deep)
+
+print(" ")
+# Atribuindo variável [2] - Shallow copy
+shallow = lista_base
+print(lista_base)
+print(shallow)
+shallow.append(5)
+print(lista_base)
+print(shallow)
+"""
+
