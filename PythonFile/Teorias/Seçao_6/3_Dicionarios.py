@@ -203,6 +203,6 @@ print(sum(salario.values()))
 print(max(salario.values()))
 # Operações [3] - Valor mínimo
 print(min(salario.values()))
-# Operações [4] - Tamanho da lista
+# Operações [4] - Tamanho do dicionário
 print(len(salario))
 """
