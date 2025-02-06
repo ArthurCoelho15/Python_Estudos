@@ -46,6 +46,8 @@ TIPO STRING:
     [4] lower() -> pra deixar a string toda em minusculo
     [5] title() -> pra deixar so a primeira em maiusculo
     [6] split() -> transforma em uma lista de strings
+        - Por padrão separa pelos espaços da string
+        - Podemos alterar a separação usando split('tipo de separação)
     [7] replace() -> troca um valor da string por outro
         Atentar-se que há a dif entre maiusculo e minusculo
 """
@@ -75,16 +77,23 @@ print(logado and logado2)
 nome = 'Arthur Nelson'
 print(nome[7:13])
 print(nome[::-1])
+
 # Tipo string [3]
 print(nome.upper())
+
 # Tipo string [4]
 print(nome.lower())
+
 # Tipo string [5]
 nome2 = 'aRTHUR nELSON2'
 print(nome2.title())
+
 # Tipo string [6]
 print(nome.split())
 print(nome.split()[0])
 print(nome.split()[1])
+nome1 = 'Arthur,Nelson,Coelho'
+print(nome1.split(','))
+
 # Tipo string [7]
 print(nome.replace('N','J'))
