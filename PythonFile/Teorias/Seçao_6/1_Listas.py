@@ -81,11 +81,11 @@ LISTAS (list):
         [2] trocando valores - Metodo 2
 
     6. Realizando operações em uma lista:
-        Exceto o Tamanho da lista [4] todos esses tem que ser com valores inteiros ou reais.
-        [1] Soma
-        [2] Valor máximo
-        [3] Valor mínimo
-        [4] Tamanho da lista
+        - Exceto o Tamanho da lista [4] todos esses tem que ser com valores inteiros ou reais.
+            [1] Soma
+            [2] Valor máximo
+            [3] Valor mínimo
+            [4] Tamanho da lista
 
     7. Desempacotamento de lista:
         - Podemos atribuir variáveis a valores de uma lista.

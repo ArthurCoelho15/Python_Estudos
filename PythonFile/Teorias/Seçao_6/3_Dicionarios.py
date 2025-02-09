@@ -79,8 +79,8 @@ DICIONÁRIOS / MAPAS (dict):
         - Eu tenho que desempacotar a mesma quantidade de valores e variáveis.
             - Não é possível desempacotar 3 variáveis em uma lista de 4 itens.
 
-    9. Realizando operações em uma lista:
-        Exceto o Tamanho da lista [4] todos esses tem que ser com valores inteiros ou reais.
+    9. Realizando operações em um dicionário:
+        - Exceto o Tamanho da lista [4] todos esses tem que ser com valores inteiros ou reais.
             [1] Soma
             [2] Valor máximo
             [3] Valor mínimo
