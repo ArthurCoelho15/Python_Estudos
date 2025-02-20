@@ -19,7 +19,7 @@ while i < 5:
         print("Você acertou!")
         contador = contador + 1
     else:
-        print(f"Burro! Você escreveu {P1}, mas a resposta é {a + b}")
+        print(f"Errou! Você escreveu {P1}, mas a resposta é {a + b}")
     i = i + 1
 
 print(f'Você acertou {contador} perguntas')
