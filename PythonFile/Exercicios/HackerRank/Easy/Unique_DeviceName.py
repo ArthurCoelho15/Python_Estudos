@@ -9,9 +9,8 @@ for i in range(0, n):
     devicename = str(input())
     list.append(devicename)
     qtd = Counter(list)
-    x = qtd[devicename]
     if devicename in uniqueDevicename:
-        uniqueDevicename.append(devicename + str(x-1))
+        uniqueDevicename.append(devicename + str(qtd[devicename]-1))
     else:
         uniqueDevicename.append(devicename)
 
