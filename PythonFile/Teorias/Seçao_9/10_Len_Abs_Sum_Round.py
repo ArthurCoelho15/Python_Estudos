@@ -1,6 +1,6 @@
 """
 
-1. LEN:1
+1. LEN:
     - Retorna o tamanho de um iterável
 
 2. ABS:
