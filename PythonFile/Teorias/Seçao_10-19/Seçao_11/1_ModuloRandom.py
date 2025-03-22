@@ -17,13 +17,13 @@ MÓDULO RANDOM:
     1. Funções do Random:
         [1] Random
             - Gera um número real pseudo-aleatorio entre 0 e 1.
-                random.random()
+                random()
         [2] Uniform
             - Gera um número real pseudo-aleatorio entre o intervalo definido
-                random.uniform(num_inicial, num_final) -> Não pega o número final
+                uniform(num_inicial, num_final) -> Não pega o número final
         [3] Randint:
             - Gera um número inteiro pseudo-aleatorio entre o intervalo definido
-                random.randint(num_inicial, num_final) -> Não pega o número final
+                randint(num_inicial, num_final) -> Não pega o número final
         [4] Choice:
             - Mostra um valor aleatório entre um iterável
                 - Listas, tuplas, dicionarios, strings
@@ -37,20 +37,26 @@ MÓDULO RANDOM:
 
 #1 MODULO RANDOM
 
-import random
-from random import shuffle, choice
+#import random
+from random import (
+    random,
+    shuffle,
+    choice,
+    uniform,
+    randint
+)
 
 
 # Funções do random [1] - Random
-num1 = random.random() # numero real pseudo-aleatório entre 0 e 1
+num1 = random() # numero real pseudo-aleatório entre 0 e 1
 print(f'num1 = {num1}')
 
 # Funções do random [2] - uniform
-num2 = random.uniform(1, 11) # numero real pseudo-aleatório entre 1 e 10
+num2 = uniform(1, 11) # numero real pseudo-aleatório entre 1 e 10
 print(f'num2 = {num2}')
 
 # Funções do random [3] - randint
-num3 = random.randint(1, 11) # numero inteiro pseudo-aleatório entre 1 e 10
+num3 = randint(1, 11) # numero inteiro pseudo-aleatório entre 1 e 10
 print(f'num3 = {num3}')
 
 # Funções do random [4] - choice
