@@ -1,0 +1,21 @@
+1. Aprendizado de máquina: https://www.youtube.com/watch?v=pgaEE27nsQw
+
+2. SVM: https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/EUCP03jqVT9Dr1VGtbDEGrcB8MvyYpI2MivXUE_4EVp0lQ?e=VVoizi
+
+3. Datasets: https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/EWZxfPaTZ_1DtOttxctEG8UBiFI7MEWuqDeFStk08lSnrA?e=fnMP8p
+
+4. Linguagens de Programação para ML: https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/Eagw2QcmgO9EnMQIyK0vkHgBKp_pKEWAqWgRtZXjkXunGw?rtime=tY2-975L3Ug
+
+5. SciLab: https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/ETy01nVrmxhNl08GdGtRKHYBJKeIwm2cMaKUFA4cdu6l7Q?rtime=7zwWj4VM3Ug
+
+6. R para ML: https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/EW9zcYhV_WBJhC29w-auNGIBqJs3CVIJki_GjFwc7xvXtQ?e=emwY1j
+
+7. SciLab: http://www.lcvdata.com/calcnum/scilab/Apostila%20de%20Scilab%20-%20atualizada.pdf 
+
+8. SciLab 2: https://www.ime.unicamp.br/~encpos/VIII_EnCPos/Apostila_Scilab.pdf 
+
+9. R: https://cran.r-project.org/doc/contrib/Landeiro-Introducao.pdf 
+
+10. R2: http://www.de.ufpb.br/~tatiene/Disciplinas/2014.2/LivroR/aprendendo_r.pdf 
+
+11. Machine Learning Biblioteca: https://petmecanica.ufes.br/sites/petengenhariamecanica.ufes.br/files/field/anexo/apostila_do_minicurso_de_machine_learning.pdf 
