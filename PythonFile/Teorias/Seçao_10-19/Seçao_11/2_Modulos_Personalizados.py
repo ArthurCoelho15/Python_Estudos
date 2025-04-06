@@ -15,7 +15,7 @@ for i in range(1, 7):
         while True:
             fruta = input('Digite uma fruta ou sair: ')
             if fruta != 'sair':
-                dub.write('MD ' + fruta + '\n')
+                ls.write('MD ' + fruta + '\n')
             else:
                 break
 
