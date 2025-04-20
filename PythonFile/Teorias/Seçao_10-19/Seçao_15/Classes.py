@@ -53,7 +53,7 @@ CLASSES:
                         // funcao
 
 
-        [3] Entidades:
+        [3] Entidades / Objetos:
             - Quando estamos planejando um software e definimos quais classes teremos que ter no sistema, chamamos esses objetos
         que serão mapeados para classes de entidades.
 """
@@ -197,3 +197,4 @@ else:
 print(f'A senha do usuário criptografada é: {user._Usuario__senha}')
 print(user.__dict__)
 """
+
