@@ -38,47 +38,30 @@ class Agenda:
     def imprimir_contato(self, indice: int):
         self.contatos[indice].imprimir()
 
+# Define que a partir daqui o código só funcionará se estivermos dando start no programa atual.
+if __name__ == '__main__':
+    # define os contatos, utilizando a
+    contato1 = Pessoa('Arthur Coelho', date(2003, 4, 15), 'arthur@gmail.com')
+    contato2 = Pessoa('Guilherme Henrique', date(2004, 1, 15), 'guilherme@gmail.com')
+    contato3 = Pessoa('Lucas Muniz', date(2003, 4, 24), 'lucas@gmail.com')
+
+    # Instancia a classe agenda, para poder ser utilizada nas demais funções.
+    agenda: Agenda = Agenda()
+
+    agenda.armazenar_contato(contato1)
+    agenda.armazenar_contato(contato2)
+    agenda.armazenar_contato(contato3)
+
+    agenda.imprimir_agenda()
+
+    agenda.buscar_contato('Arthur Coelho')
+
+    agenda.imprimir_contato(2)
+
+    agenda.remover_contato(contato3)
+
+    agenda.imprimir_agenda()
 
 
-contato1 = Pessoa('Felicity Jones', date(1987, 7, 22), 'felicity@gmail.com')
-contato2 = Pessoa('Angelina Jolie', date(1984, 3, 6), 'angelina@gmail.com')
-contato3 = Pessoa('Ray Sychev', date(1981, 8, 18), 'ray@gmail.com')
-
-agenda: Agenda = Agenda()
-
-agenda.armazenar_contato(contato1)
-agenda.armazenar_contato(contato2)
-agenda.armazenar_contato(contato3)
-
-agenda.imprimir_agenda()
-
-agenda.buscar_contato('Ray Sychev')
-
-agenda.imprimir_contato(2)
-
-agenda.remover_contato(contato3)
-
-agenda.imprimir_agenda()
-
-
-contato1 = Pessoa('Felicity Jones', date(1987, 7, 22), 'felicity@gmail.com')
-#contato2 = Pessoa('Angelina Jolie', date(1984, 3, 6), 'angelina@gmail.com')
-#contato3 = Pessoa('Ray Sychev', date(1981, 8, 18), 'ray@gmail.com')
-
-agenda: Agenda = Agenda()
-
-agenda.armazenar_contato(contato1)
-#agenda.armazenar_contato(contato2)
-#agenda.armazenar_contato(contato3)
-
-agenda.imprimir_agenda()
-
-agenda.buscar_contato('Ray Sychev')
-
-agenda.imprimir_contato(2)
-
-agenda.remover_contato(contato3)
-
-agenda.imprimir_agenda()
 
 

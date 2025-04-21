@@ -10,9 +10,9 @@ from datetime import date
 class Pessoa:
 
     def __init__(self, nome: str, nascimento: date, email: str ) -> None:
-        self.__nome = nome
-        self.__nascimento = nascimento
-        self.__email = email
+        self.__nome: str = nome
+        self.__nascimento: date = nascimento
+        self.__email: str = email
 
     @property
     def nome(self) -> str:
@@ -40,15 +40,17 @@ class Pessoa:
 
     def imprimir(self):
         print(f'Nome: {self.nome}')
-        print(f'data de nascimento: {self.nascimento.strftime('%d/%m/%Y')}')
+        print(f'Data de nascimento: {self.nascimento.strftime('%d/%m/%Y')}')
         print(f'Email: {self.email}')
 
-name = input('Digite seu nome: ')
-data = input('Digite sua data de nascimento: ')
-mail = input('Digite seu email: ')
+# Define que a partir daqui o código só funcionará se estivermos dando start no programa atual.
+if __name__ == '__main__':
+    name = input('Digite seu nome: ')
+    data = input('Digite sua data de nascimento (no formato dd/mm/aaaa): ')
+    mail = input('Digite seu email: ')
 
-al = list(data.split('/'))
+    al = list(data.split('/'))
 
-p1 = Pessoa(name, date(int(al[2]), int(al[1]), int(al[0])), mail)
+    p1 = Pessoa(name, date(int(al[2]), int(al[1]), int(al[0])), mail)
 
-p1.imprimir()
+    p1.imprimir()

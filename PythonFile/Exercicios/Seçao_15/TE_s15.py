@@ -49,32 +49,31 @@ class Agenda:
     def imprimir_contato(self, indice: int):
         self.contatos[indice].imprimir()
 
+
+def decisao(escolha):
+    agenda: Agenda = Agenda()
+    if escolha == '1':
+        name = input('Digite seu nome: ')
+        data = input('Digite sua data de nascimento (no formato dd/mm/aaaa): ')
+        mail = input('Digite seu email: ')
+        al = list(data.split('/'))
+        contato = Pessoa(name, date(int(al[2]), int(al[1]), int(al[0])), mail)
+        agenda.armazenar_contato(contato)
+    elif escolha == '2':
+        print(f'Funcionando {agenda.imprimir_agenda()}')
+
+
+
 # Define que a partir daqui o código só funcionará se estivermos dando start no programa atual.
 if __name__ == '__main__':
-    # define os contatos, utilizando a classe Pessoa
-    contato1 = Pessoa('Arthur Coelho', date(2003, 4, 15), 'arthur@gmail.com')
-    contato2 = Pessoa('Guilherme Henrique', date(2004, 1, 15), 'guilherme@gmail.com')
-    contato3 = Pessoa('Lucas Muniz', date(2003, 4, 24), 'lucas@gmail.com')
-
-    # Instancia a classe agenda, para poder ser utilizada nas demais funções.
     agenda: Agenda = Agenda()
-
-    # Armazenando os contatos anteriormente definidos, utilizando a função armazenar_contato
-    agenda.armazenar_contato(contato1)
-    agenda.armazenar_contato(contato2)
-    agenda.armazenar_contato(contato3)
-
-    # Imprimindo a agenda completa, utilizando a função imprimir_agenda
-    agenda.imprimir_agenda()
-
-    # Buscando contato pelo nome, utilizando a função buscar_contato, a função irá devolver o nome e índice
-    agenda.buscar_contato('Arthur Coelho')
-
-    # Imprimindo as informações do contato utilizando o índice como ferramenta de busca, continuando a linha anterior do buscar_contato
-    agenda.imprimir_contato(2)
-
-    # Removendo o contato definido na variável
-    agenda.remover_contato(contato3)
-
-    # Imprimindo a agenda completa após a sequência de modificações
-    agenda.imprimir_agenda()
+    while True:
+        print('\n\n')
+        num = input('Bem vindo a sua agenda!\n'
+            'Escolha uma opção para continuar:\n'
+            'Digite 1 para armazenar um contato\n'
+            'Digite 2 para imprimir a agenda: ')
+        if num != '2':
+            pass
+        else:
+            agenda.armazenar_contato()
